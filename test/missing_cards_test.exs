@@ -1,5 +1,6 @@
 defmodule MissingCardsTest do
   use ExUnit.Case
+  doctest MissingCards
 
   test "MTGO format line gets parsed into number and name" do
     assert (MissingCards.parseOneMtgoLine("4 Battlefield Raptor") == {4, "Battlefield Raptor"})
