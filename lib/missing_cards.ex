@@ -1,18 +1,7 @@
 defmodule MissingCards do
-  @moduledoc """
-  Documentation for `MissingCards`.
-  """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> MissingCards.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def parseOneLine(line) do
+    [count | name_parts] = String.split(line)
+    name = Enum.join(name_parts, " ")
   end
 end
